@@ -12,28 +12,31 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="onlymusic_watch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="left" layout="vertical" id="3mD-e2-LcM">
+                        <group width="1" height="177" alignment="left" layout="vertical" id="3mD-e2-LcM">
                             <items>
                                 <group width="1" alignment="left" layout="vertical" id="GEo-N0-PMB">
                                     <items>
-                                        <label alignment="center" text="Artist" id="wfU-DL-EpF"/>
-                                        <label alignment="center" text="Song" id="2Yb-Mx-V0c"/>
+                                        <label alignment="center" text="Carbonara" id="2Yb-Mx-V0c"/>
                                     </items>
                                 </group>
                                 <group alignment="center" id="iRd-hl-rJl">
                                     <items>
-                                        <button width="100" height="100" alignment="left" backgroundImage="Rewind" id="hEm-0g-FJO">
-                                            <variation key="device=watch38mm" height="40" width="40"/>
-                                            <variation key="device=watch42mm" height="44" width="44"/>
-                                        </button>
                                         <button width="100" height="100" alignment="left" backgroundImage="Play" id="0EV-me-RxM">
                                             <variation key="device=watch38mm" height="40" width="40"/>
-                                            <variation key="device=watch42mm" height="44" width="44"/>
+                                            <variation key="device=watch42mm" height="65" width="74"/>
                                             <connections>
                                                 <action selector="playButtonTapped" destination="AgC-eL-Hgc" id="1rX-O9-OQ8"/>
                                             </connections>
                                         </button>
-                                        <button width="100" height="100" alignment="left" backgroundImage="FastForwards" id="bsq-sV-Dk9">
+                                    </items>
+                                </group>
+                                <group width="143" alignment="center" id="PqK-ls-TC8">
+                                    <items>
+                                        <button width="100" height="100" alignment="left" backgroundImage="Back" id="vbE-Fl-T3K">
+                                            <variation key="device=watch38mm" height="40" width="40"/>
+                                            <variation key="device=watch42mm" height="44" width="44"/>
+                                        </button>
+                                        <button width="100" height="100" alignment="right" backgroundImage="FastForward" id="56x-OE-40O">
                                             <variation key="device=watch38mm" height="40" width="40"/>
                                             <variation key="device=watch42mm" height="44" width="44"/>
                                         </button>
@@ -49,12 +52,12 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="31"/>
+            <point key="canvasLocation" x="34" y="32.256410256410255"/>
         </scene>
     </scenes>
     <resources>
-        <image name="FastForwards" width="50" height="50"/>
-        <image name="Play" width="48" height="48"/>
-        <image name="Rewind" width="50" height="50"/>
+        <image name="Back" width="44" height="44"/>
+        <image name="FastForward" width="44" height="44"/>
+        <image name="Play" width="66" height="66"/>
     </resources>
 </document>

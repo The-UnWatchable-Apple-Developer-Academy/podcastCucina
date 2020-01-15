@@ -23,6 +23,18 @@
 		B6B58B5F23CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B5E23CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 */; };
 		B6B58B6023CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B5E23CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 */; };
 		B6B58B6123CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B5E23CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 */; };
+		B6B58B7623CF72CB005E19F5 /* FastForward.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7223CF72CB005E19F5 /* FastForward.png */; };
+		B6B58B7723CF72CB005E19F5 /* FastForward.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7223CF72CB005E19F5 /* FastForward.png */; };
+		B6B58B7823CF72CB005E19F5 /* FastForward.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7223CF72CB005E19F5 /* FastForward.png */; };
+		B6B58B7923CF72CB005E19F5 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7323CF72CB005E19F5 /* Play.png */; };
+		B6B58B7A23CF72CB005E19F5 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7323CF72CB005E19F5 /* Play.png */; };
+		B6B58B7B23CF72CB005E19F5 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7323CF72CB005E19F5 /* Play.png */; };
+		B6B58B7C23CF72CB005E19F5 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7423CF72CB005E19F5 /* Back.png */; };
+		B6B58B7D23CF72CB005E19F5 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7423CF72CB005E19F5 /* Back.png */; };
+		B6B58B7E23CF72CB005E19F5 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7423CF72CB005E19F5 /* Back.png */; };
+		B6B58B7F23CF72CB005E19F5 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7523CF72CB005E19F5 /* Pause.png */; };
+		B6B58B8023CF72CB005E19F5 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7523CF72CB005E19F5 /* Pause.png */; };
+		B6B58B8123CF72CB005E19F5 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B58B7523CF72CB005E19F5 /* Pause.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +98,10 @@
 		64D2916122FFF2750038E65D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64D2916322FFF2750038E65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B58B5E23CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3"; path = "../../Desktop/Doc/musica/Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3"; sourceTree = "<group>"; };
+		B6B58B7223CF72CB005E19F5 /* FastForward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FastForward.png; sourceTree = SOURCE_ROOT; };
+		B6B58B7323CF72CB005E19F5 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = SOURCE_ROOT; };
+		B6B58B7423CF72CB005E19F5 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = SOURCE_ROOT; };
+		B6B58B7523CF72CB005E19F5 /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +162,10 @@
 				64D2914C22FFF2740038E65D /* Interface.storyboard */,
 				64D2914F22FFF2740038E65D /* Assets.xcassets */,
 				64D2915122FFF2740038E65D /* Info.plist */,
+				B6B58B7423CF72CB005E19F5 /* Back.png */,
+				B6B58B7223CF72CB005E19F5 /* FastForward.png */,
+				B6B58B7523CF72CB005E19F5 /* Pause.png */,
+				B6B58B7323CF72CB005E19F5 /* Play.png */,
 			);
 			path = "onlymusic-watch WatchKit App";
 			sourceTree = "<group>";
@@ -265,8 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D2914322FFF2740038E65D /* LaunchScreen.storyboard in Resources */,
+				B6B58B7C23CF72CB005E19F5 /* Back.png in Resources */,
+				B6B58B7F23CF72CB005E19F5 /* Pause.png in Resources */,
 				B6B58B5F23CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 in Resources */,
 				64D2914022FFF2740038E65D /* Assets.xcassets in Resources */,
+				B6B58B7923CF72CB005E19F5 /* Play.png in Resources */,
+				B6B58B7623CF72CB005E19F5 /* FastForward.png in Resources */,
 				64D2913E22FFF26E0038E65D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,9 +299,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B58B7D23CF72CB005E19F5 /* Back.png in Resources */,
 				64D2915022FFF2740038E65D /* Assets.xcassets in Resources */,
+				B6B58B7723CF72CB005E19F5 /* FastForward.png in Resources */,
+				B6B58B7A23CF72CB005E19F5 /* Play.png in Resources */,
 				64D2914E22FFF2740038E65D /* Interface.storyboard in Resources */,
 				B6B58B6023CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 in Resources */,
+				B6B58B8023CF72CB005E19F5 /* Pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +313,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B58B8123CF72CB005E19F5 /* Pause.png in Resources */,
 				64D2916222FFF2750038E65D /* Assets.xcassets in Resources */,
+				B6B58B7B23CF72CB005E19F5 /* Play.png in Resources */,
+				B6B58B7E23CF72CB005E19F5 /* Back.png in Resources */,
+				B6B58B7823CF72CB005E19F5 /* FastForward.png in Resources */,
 				B6B58B6123CF4BFE005E19F5 /* Underworld - Born Slippy (Nuxx) (Creative Commission version).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3RST7K54M;
+				DEVELOPMENT_TEAM = 256756VFT8;
 				INFOPLIST_FILE = "onlymusic-watch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,7 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3RST7K54M;
+				DEVELOPMENT_TEAM = 256756VFT8;
 				INFOPLIST_FILE = "onlymusic-watch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,7 +553,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3RST7K54M;
+				DEVELOPMENT_TEAM = 256756VFT8;
 				IBSC_MODULE = onlymusic_watch_WatchKit_Extension;
 				INFOPLIST_FILE = "onlymusic-watch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "onlymusic-watch.watchkitapp";
@@ -540,7 +572,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3RST7K54M;
+				DEVELOPMENT_TEAM = 256756VFT8;
 				IBSC_MODULE = onlymusic_watch_WatchKit_Extension;
 				INFOPLIST_FILE = "onlymusic-watch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "onlymusic-watch.watchkitapp";
@@ -559,7 +591,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3RST7K54M;
+				DEVELOPMENT_TEAM = 256756VFT8;
 				INFOPLIST_FILE = "onlymusic-watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -579,7 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3RST7K54M;
+				DEVELOPMENT_TEAM = 256756VFT8;
 				INFOPLIST_FILE = "onlymusic-watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

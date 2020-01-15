@@ -70,7 +70,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     }
     
     
-    func readMe( myText: String , myLang : String) {
+    func readMePlay( myText: String , myLang : String) {
         let utterance = AVSpeechUtterance(string: myText )
         utterance.voice = AVSpeechSynthesisVoice(language: myLang)
         utterance.rate = 0.5
@@ -79,9 +79,17 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         synthesizer.speak(utterance)
     }
     
+    func readMePause() {
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.pauseSpeaking(at: AVSpeechBoundary.immediate)
+        
+    }
+    
+    
     func playSound() {
         
-        self.readMe(myText: ricetta , myLang: "en-IT")
+        self.readMePlay(myText: ricetta , myLang: "it-IT")
 
         
         
@@ -103,20 +111,22 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     }
     
     func pauseSound() {
-        guard let url = Bundle.main.url(forResource: "Underworld - Born Slippy (Nuxx) (Creative Commission version)", withExtension: "mp3") else { return }
         
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            player = try AVAudioPlayer(contentsOf: url)
-            
-            guard let player = player else { return }
-            
-            player.stop()
-            
-        } catch let error {
-            print(error.localizedDescription)
-        }
+        self.readMePause()
+//        guard let url = Bundle.main.url(forResource: "Underworld - Born Slippy (Nuxx) (Creative Commission version)", withExtension: "mp3") else { return }
+//
+//        do {
+//            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+//            try AVAudioSession.sharedInstance().setActive(true)
+//
+//            player = try AVAudioPlayer(contentsOf: url)
+//
+//            guard let player = player else { return }
+//
+//            player.stop()
+//
+//        } catch let error {
+//            print(error.localizedDescription)
+//        }
     }
 }
