@@ -60,6 +60,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
                // The pause functionality
                else if (synth.isSpeaking) {
                    synth.pauseSpeaking(at: AVSpeechBoundary.immediate)
+
                }
                // The start functionality
                else if (!synth.isSpeaking) {
@@ -68,7 +69,18 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
                    theUtterance.voice = AVSpeechSynthesisVoice(language: "it-IT")
                    theUtterance.rate = 0.5
                    synth.speak(theUtterance)
+
                }
+        
+        if songState == .Paused {
+            songState = .Playing
+            playButton.setBackgroundImage(UIImage(named: "Pause"))
+        } else if songState == .Playing {
+            songState = .Paused
+            playButton.setBackgroundImage(UIImage(named: "Play"))
+        }
+        
+       
     }
     
    
