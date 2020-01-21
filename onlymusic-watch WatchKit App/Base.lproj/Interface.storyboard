@@ -1,63 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RCW-Eq-PtT">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RCW-Eq-PtT" pageOrientation="vertical">
     <device id="watch42"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Widget View-->
+        <scene sceneID="0KG-MW-XWC">
+            <objects>
+                <hostingController id="mUH-PT-B2x" customClass="WidgetView"/>
+            </objects>
+            <point key="canvasLocation" x="-568" y="217"/>
+        </scene>
+        <!--Main Course-->
         <scene sceneID="ien-H3-AId">
             <objects>
-                <controller id="RCW-Eq-PtT" customClass="InterfaceController" customModule="onlymusic_watch_WatchKit_Extension">
+                <controller title="Main Course" id="RCW-Eq-PtT" customClass="MainCourseController" customModule="onlymusic_watch_WatchKit_Extension">
                     <items>
-                        <button width="1" alignment="left" title="ciaone" id="o6W-5G-0MI">
+                        <button alignment="left" id="n0X-qq-Q5c">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="ug0-fa-gP5">
+                                <items>
+                                    <label width="141" alignment="left" text="Gnocchi di Patate" textAlignment="right" id="a4P-D7-x0g">
+                                        <fontDescription key="font" type="system" pointSize="17"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="2stars" id="fjy-p5-ZBC"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
                             <connections>
-                                <action selector="button" destination="RCW-Eq-PtT" id="2uj-H8-IZh"/>
-                                <segue destination="AgC-eL-Hgc" kind="push" id="iiV-6n-Bfj"/>
+                                <action selector="onClickRecipe1" destination="RCW-Eq-PtT" id="MTT-t3-CNf"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="xGh-ec-ifr">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="n5j-px-O2u">
+                                <items>
+                                    <label width="86" alignment="left" text="Carbonara" textAlignment="right" id="iTe-fa-CMw">
+                                        <fontDescription key="font" type="system" pointSize="17"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="1star" id="8aq-zM-eRz"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe2" destination="RCW-Eq-PtT" id="KP7-dQ-v3h"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="qoF-2f-aIJ">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="t7V-D9-Ry9">
+                                <items>
+                                    <label width="70" alignment="left" text="Lasagna" textAlignment="right" id="Mke-fo-x6n">
+                                        <fontDescription key="font" type="system" pointSize="17"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="3stars" id="bO4-lx-qfO"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe3" destination="RCW-Eq-PtT" id="biC-be-cXA"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="fti-f4-jZv">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="kfa-sy-dzo">
+                                <items>
+                                    <label width="149" alignment="left" text="Riso allo zafferano" textAlignment="right" id="fWb-BZ-j88">
+                                        <fontDescription key="font" type="system" pointSize="17"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="4stars" id="FTR-S0-Rg6"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe4" destination="RCW-Eq-PtT" id="n7K-Qx-vPY"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="uPT-hj-iiG">
+                            <group key="contentGroup" width="1" height="50" alignment="left" layout="vertical" id="EAY-sE-Y4B">
+                                <items>
+                                    <label width="152" alignment="left" text="Spaghetti e Vongole" textAlignment="right" id="ECf-Mc-Uc3">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </label>
+                                    <imageView width="100" height="17" alignment="right" image="5stars" id="X3o-r7-hBo"/>
+                                </items>
+                                <color key="backgroundColor" red="0.13334026930000001" green="0.13327768449999999" blue="0.13725554940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </group>
+                            <connections>
+                                <action selector="onClickRecipe5" destination="RCW-Eq-PtT" id="m78-Bp-Qr2"/>
                             </connections>
                         </button>
                     </items>
-                    <connections>
-                        <outlet property="button" destination="o6W-5G-0MI" id="W1L-9b-QnW"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-212" y="-73"/>
+            <point key="canvasLocation" x="-212.71794871794873" y="-58.410256410256416"/>
         </scene>
-        <!--Interface Controller-->
+        <!--recipe-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="onlymusic_watch_WatchKit_App" customModuleProvider="target">
+                <controller identifier="recipe" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="onlymusic_watch_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="177" alignment="left" layout="vertical" id="3mD-e2-LcM">
                             <items>
-                                <group width="1" alignment="left" layout="vertical" id="GEo-N0-PMB">
-                                    <items>
-                                        <label alignment="center" text="Polpo in umido" id="2Yb-Mx-V0c"/>
-                                    </items>
-                                </group>
-                                <group alignment="center" id="iRd-hl-rJl">
+                                <group width="80" height="80" alignment="center" id="iRd-hl-rJl">
                                     <items>
                                         <button width="100" height="100" alignment="left" backgroundImage="Play" id="0EV-me-RxM">
-                                            <variation key="device=watch38mm" height="40" width="40"/>
-                                            <variation key="device=watch42mm" height="65" width="74"/>
+                                            <variation key="device=watch38mm" height="50" width="50"/>
+                                            <variation key="device=watch42mm" height="80" width="80"/>
                                             <connections>
                                                 <action selector="playButtonTapped" destination="AgC-eL-Hgc" id="1rX-O9-OQ8"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="143" alignment="center" id="PqK-ls-TC8">
+                                <group width="170" alignment="center" id="PqK-ls-TC8">
                                     <items>
-                                        <button width="100" height="100" alignment="left" backgroundImage="Back" id="vbE-Fl-T3K">
+                                        <button width="100" height="100" alignment="right" backgroundImage="Forward10" id="56x-OE-40O">
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <variation key="device=watch38mm" height="40" width="40"/>
-                                            <variation key="device=watch42mm" height="44" width="44"/>
+                                            <variation key="device=watch42mm" height="65" width="65"/>
                                         </button>
-                                        <button width="100" height="100" alignment="right" backgroundImage="FastForward" id="56x-OE-40O">
+                                        <button width="100" height="100" alignment="left" backgroundImage="Back10" id="vbE-Fl-T3K">
                                             <variation key="device=watch38mm" height="40" width="40"/>
-                                            <variation key="device=watch42mm" height="44" width="44"/>
+                                            <variation key="device=watch42mm" height="65" width="65"/>
                                         </button>
                                     </items>
                                 </group>
@@ -75,8 +139,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Back" width="44" height="44"/>
-        <image name="FastForward" width="44" height="44"/>
-        <image name="Play" width="66" height="66"/>
+        <image name="1star" width="500" height="82"/>
+        <image name="2stars" width="500" height="82"/>
+        <image name="3stars" width="500" height="82"/>
+        <image name="4stars" width="500" height="82"/>
+        <image name="5stars" width="500" height="82"/>
+        <image name="Back10" width="500" height="500"/>
+        <image name="Forward10" width="500" height="500"/>
+        <image name="Play" width="500" height="500"/>
     </resources>
+    <color key="tintColor" red="0.95606666799999995" green="0.86706191300000002" blue="0.39594346279999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
